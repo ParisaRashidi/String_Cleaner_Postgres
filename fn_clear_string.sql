@@ -1,4 +1,4 @@
-create or replace function fn_prunepersianstring(inputstr text)
+create or replace function fn_clear_string(inputstr text)
   returns character
 language plpgsql
 as $$
@@ -93,5 +93,3 @@ END;
 
 $$;
 
-alter function fn_prunepersianstring(text)
-  owner to postgres;
